@@ -20,17 +20,19 @@ This project demonstrates foundational network administration supporting endpoin
 - Add network monitoring or health checks to increase visibility into device availability and performance (PowerShell)  
 
 
+## Scope of Work
+
 ### Switch Setup & Baseline Connectivity
 - Connected and validated a gigabit switch uplink and endpoint access ports
 - Verified DHCP assignment and subnet consistency across endpoints
-- Confirmed Layer 2 and Layer 3 connectivity with firewall-aware testing
+- Confirmed Layer 2 and Layer 3 connectivity 
 
 <details>
 <summary>Implementation Details</summary>
 
-Connected a **:contentReference[oaicite:0]{index=0} 8-port Gigabit desktop switch** to the router and lab endpoints:
+Connected a **TP-Link 8-port Gigabit desktop switch** to the router and lab endpoints:
 
-- **Port 1 (uplink):** Router  
+- **Port 1** (uplink): Router  
 - **Port 2:** OptiPlex desktop  
 - **Port 3:** ThinkPad laptop  
 
@@ -95,7 +97,7 @@ Configured DHCP reservations within the active scope for key lab endpoints:
 Released and renewed DHCP leases on both hosts and confirmed that each endpoint obtained its reserved IP address.
 
 **DNS Configuration & Validation**
-- Configured upstream DNS resolvers to **:contentReference[oaicite:1]{index=1}** (`1.1.1.1` / `1.0.0.1`) for performance and privacy
+- Configured upstream DNS resolvers to **Cloudflare** (`1.1.1.1` / `1.0.0.1`) for performance and privacy
 - Client systems use the router (`192.168.0.1`) as their DNS server, which forwards queries upstream
 - Verified external name resolution using:  
   `nslookup www.google.com 1.1.1.1`
