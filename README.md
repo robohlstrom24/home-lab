@@ -17,12 +17,13 @@ This project demonstrates foundational network administration supporting endpoin
 ## Scope of Work
 
 ### Switch Setup & Baseline Connectivity
-Endpoint documentation, subnet consistency, Layer 2/3 connectivity
+Endpoint documentation, subnet consistency, Layer 2/3 connectivity testing
 
 <details>
 <summary>Implementation Details</summary>
 
-Connected a **TP-Link 8-port Gigabit desktop switch** to the router and lab endpoints:
+
+- Connected a **TP-Link 8-port Gigabit desktop switch** to the router and lab endpoints:
 
 - **Port 1** (uplink): Router  
 - **Port 2:** OptiPlex desktop  
@@ -62,12 +63,11 @@ Ran `ipconfig /all` on both endpoints to document host identity, IP addressing, 
 ---
 
 ### DHCP Addressing Plan & Basic DNS
-Router hardening, DHCP scope/reservations, DNS configuration/validation
+Router hardening, IP addressing strategy, DHCP scope/reservations, DNS configuration/validation
 
 <details>
 <summary>Implementation Details</summary>
 
-- Performed baseline network hardening and established a predictable IP addressing strategy to support lab services and future expansion.
 
 **Router Hardening & DHCP Scope**
 - Updated router default credentials and applied latest firmware (network infrastructure hardening)
