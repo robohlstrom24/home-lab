@@ -60,8 +60,6 @@ Endpoint documentation, subnet consistency, Layer 2/3 connectivity testing
 
 </details>
 
----
-
 ### DHCP Addressing Plan & Basic DNS
 Router hardening, IP addressing strategy, DHCP scope/reservations, DNS configuration/validation
 
