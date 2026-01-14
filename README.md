@@ -1,6 +1,6 @@
-(in progress)
+(project in progress)
 
-# Home Network
+# Home Lab
 
 ## Operational Relevance (Network Infrastructure and Connectivity)
 
